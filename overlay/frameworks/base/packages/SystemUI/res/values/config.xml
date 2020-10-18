@@ -17,4 +17,8 @@
 -->
 <resources>
     <bool name="config_roundedCornerMultipleRadius">true</bool>
+
+    <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#00ffffff</color>
+
 </resources>
