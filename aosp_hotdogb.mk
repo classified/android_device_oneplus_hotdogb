@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common AOSPK stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_hotdogb
+PRODUCT_NAME := aosp_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := HD1905
@@ -26,9 +26,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
-scr_resolution := 1080
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Maintainer
+ro.kraken.maintainer := matt0301
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
