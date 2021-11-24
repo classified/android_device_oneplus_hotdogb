@@ -1,6 +1,6 @@
 [
   {
-  "remote": "hub-devices",
+  "remote": "pixel-devices",
   "repository": "device_oneplus_sm8150-common",
   "target_path": "device/oneplus/sm8150-common",
   "branch": "twelve"
