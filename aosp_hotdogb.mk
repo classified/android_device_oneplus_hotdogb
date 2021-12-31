@@ -11,8 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common Derp stuff.
+# Inherit some common pe stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Setup pe options
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_hotdogb
